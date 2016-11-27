@@ -3,6 +3,7 @@ package com.bit2016.linearlayoutexample;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onButton9Clicked(View v) {
+        Log.d("MainActivity", "onButton9Clicked() called");
         Intent intent = new Intent(getApplicationContext(), SampleLayoutCodeActivity.class);
         startActivity(intent);
     }
